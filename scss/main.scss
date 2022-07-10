@@ -1,5 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
 $body-bg: #f2ebe3;
 
+.h1{
+    font-family: 'Fraunces', serif;;
+}
+.card-text{
+    font-family: 'Montserrat', sans-serif;
+}
+.card{
+    border-radius: 15px !important;
+}
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
@@ -9,4 +21,12 @@ $body-bg: #f2ebe3;
 .cart{
     width: 100%;
     padding: 10px 0;
+}
+.product-img{
+    border-radius: 10px 0 0 10px;
+}
+@media  screen and (max-width:576px) {
+    .product-img{
+        border-radius: 10px 10px 0 0;
+    }
 }
